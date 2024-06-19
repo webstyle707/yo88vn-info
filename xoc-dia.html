@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./img/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xóc đĩa - Những ưu điểm khi chơi xóc đĩa online</title>
+    <meta name="keywords" content="Sicbo, Xóc đĩa, Nổ Hũ, Bắn Cá, Đá Gà, Xóc Đĩa, Bầu Cua, Sòng Bài, Xổ Số, Baccarat">
+    <meta name="description" content="Xóc đĩa là một trò chơi đánh bài trực tuyến phổ biến, trong đó người chơi đoán kết quả của 4 quân vị được lắc trong 1 cái chén. Trò chơi này đang ngày càng">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+       <!-- navbar -->
+       <div
+       class="widht inset-0 bg-opacity-60 bg-gray-950 h-screen fixed z-10 lg:hidden"
+     >
+       <div
+         onclick="handleHide()"
+         class="lg:hidden absolute right-3 top-3 md:top-5 md:right-5 text-gray-100"
+       >
+         <svg
+           xmlns="http://www.w3.org/2000/svg"
+           fill="none"
+           viewBox="0 0 24 24"
+           stroke-width="1.5"
+           stroke="currentColor"
+           class="size-6"
+         >
+           <path
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             d="M6 18 18 6M6 6l12 12"
+           />
+         </svg>
+       </div>
+       <div class="w-[70%] md:w-[34%] h-full bg-gray-100 py-14">
+         <div class="flex items-center justify-center">
+           <input
+             type="text"
+             class="text-gray-500 text-xl shadow-lg h-10 w-[72%] border-l border-t border-b rounded-l pl-2 focus:outline-none"
+           />
+           <div
+             class="h-[2.6rem] border-r border-t border-b w-10 flex justify-center items-center shadow-lg rounded-r bg-[#D26E4B] text-white text-2xl"
+           >
+             <a href="https://www.hay88.one/?inviteCode=1605706">
+               <ion-icon name="search-outline"></ion-icon>
+             </a>
+           </div>
+         </div>
+
+         <ul class="pt-8 font-semibold text-gray-600">
+           <li class="pt-4 border-t border-gray-300 pb-2 pl-5">
+             <a href="./index.html">Trang Chủ</a>
+           </li>
+           <li class="pt-4 border-t border-gray-300 pb-2 pl-5">
+             <a href="./gioi-thieu.html">GIỚI THIỆU</a>
+           </li>
+           <li class="pt-4 border-t border-gray-300 pb-2 pl-5">
+             <a href="./chinh-sach-bao-mat.html">CHÍNH SÁCH</a>
+           </li>
+           <li class="pt-4 border-t border-gray-300 pb-2 pl-5">
+             <a href="./dieu-khoan-dich-vu.html">ĐIỀU KHOẢN</a>
+           </li>
+           <li class="pt-4 border-t border-gray-300 uppercase pb-2 pl-5">
+             <a href="./xoc-dia.html">xoc-dia</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+     <!-- header -->
+     <div class="bg-[#2B1100] w-full fixed">
+       <div
+         class="xl:max-w-[1065px] w-full mx-auto hidden lg:flex items-center justify-between px-4 xl:px-0"
+       >
+         <div><img src="./img/yo88vn.net_.png" class="w-[135px]" /></div>
+         <div>
+           <ul
+             class="flex items-center justify-center space-x-4 font-semibold uppercase"
+           >
+             <li class="text-gray-100">
+               <a href="./index.html"
+                 >Trang Chủ</a
+               >
+             </li>
+             <li class="text-gray-100">
+               <a href="./gioi-thieu.html"
+                 >GIỚI THIỆU</a
+               >
+             </li>
+             <li class="text-gray-100">
+               <a href="./chinh-sach-bao-mat.html"
+                 >CHÍNH SÁCH</a
+               >
+             </li>
+             <li class="text-gray-100">
+               <a href="./dieu-khoan-dich-vu.html"
+                 >ĐIỀU KHOẢN</a
+               >
+             </li>
+             <li class="text-white uppercase">
+               <a href="./xoc-dia.html">xoc-dia</a>
+             </li>
+           </ul>
+         </div>
+         <div class="flex justify-center items-center space-x-4 text-white">
+           <a href="https://www.hay88.one/?inviteCode=1605706">
+             <button
+               class="bg-[#B20000] rounded font-semibold text-sm uppercase px-3 py-1"
+             >
+               Đăng Ký
+             </button>
+           </a>
+
+           <a href="https://www.hay88.one/?inviteCode=1605706">
+             <button
+               class="bg-[#7A9C59] rounded font-semibold text-sm uppercase px-3 py-1"
+             >
+               Đăng nhập
+             </button>
+           </a>
+         </div>
+       </div>
+
+       <div class="lg:hidden flex justify-between items-center px-3">
+         <div onclick="handleShow()" class="text-white text-3xl pt-2">
+           <ion-icon name="menu-outline"></ion-icon>
+         </div>
+
+         <div class="pr-8">
+           <img src="./img/yo88vn.net_.png" class="w-[135px]" />
+         </div>
+
+         <div></div>
+       </div>
+       <div
+         class="flex lg:hidden justify-center items-center space-x-4 text-white bg-white inset-0 bg-opacity-95 py-1"
+       >
+         <a href="https://www.hay88.one/?inviteCode=1605706">
+           <button
+             class="bg-[#B20000] rounded font-semibold text-sm uppercase px-3 py-1"
+           >
+             Đăng Ký
+           </button>
+         </a>
+
+         <a href="https://www.hay88.one/?inviteCode=1605706">
+           <button
+             class="bg-[#7A9C59] rounded font-semibold text-sm uppercase px-3 py-1"
+           >
+             Nhận Code
+           </button>
+         </a>
+       </div>
+     </div>
+
+      <!-- container -->
+      <div
+        class="xl:max-w-[1065px] w-full mx-auto px-4 xl:px-0 space-y-4 py-7 pt-36 lg:pt-[116px]"
+      >
+        <h1
+          class="font-bold text-[21px] text-center md:text-[26px] lg:text-[27px]"
+        >
+          Xóc đĩa – Những ưu điểm khi chơi xóc đĩa online
+        </h1>
+
+        <!-- img 1 -->
+        <div class="flex justify-center items-center py-8">
+          <img src="./img/xoc-dia1.jpg" class="w-full lg:w-[79%] xl:w-9/12" />
+        </div>
+
+        <h1
+          class="font-bold text-[21px] text-center md:text-[26px] lg:text-[27px]"
+        >
+          Xóc đĩa – Những ưu điểm khi chơi xóc đĩa online
+        </h1>
+
+        <p>
+          <span
+            class="text-red-500 font-bold transition-all duration-200 hover:text-gray-800 cursor-pointer"
+            >Xóc đĩa</span
+          >
+          là một trò chơi đánh bài trực tuyến phổ biến, trong đó người chơi đoán
+          kết quả của 4 quân vị được lắc trong 1 cái chén. Trò chơi này đang
+          ngày càng trở nên phổ biến trên các trang web cá cược trực tuyến, với
+          độ tin cậy và tính giải trí cao. Hãy cùng nhà cái
+          <span
+            class="text-red-500 font-bold transition-all duration-200 hover:text-gray-800 cursor-pointer"
+            >Yo88</span
+          >
+          tiềm hiểu về những ưu điểm khi chơi xóc đĩa online này nhé.
+        </p>
+
+        <!-- img 2 -->
+        <div class="space-y-3">
+          <h1
+            class="font-bold text-[19px] md:text-[24px] lg:text-[25px] text-center"
+          >
+            Ưu điểm khi chơi xóc đĩa online
+          </h1>
+
+          <div class=" ">
+            <div class="flex justify-center items-center">
+              <img
+                src="./img/xoc-dia2.jpg"
+                class="w-full lg:w-[79%] xl:w-9/12"
+              />
+            </div>
+            <p
+              class="mx-auto w-full lg:w-[79%] xl:w-9/12 py-1 bg-gray-100 text-center"
+            >
+              Ưu điểm khi chơi xóc đĩa online
+            </p>
+          </div>
+        </div>
+
+        <h1 class="font-bold text-[18px] md:text-[19px] lg:text-[20px]">
+          Tiện lợi và dễ dàng chơi
+        </h1>
+
+        <p>
+          Với <span class="font-bold">xoc dia</span> online, bạn có thể chơi bất
+          cứ lúc nào và bất cứ nơi đâu. Bạn không cần phải đi đến sòng bạc
+          truyền thống để tham gia vào trò chơi này. Thay vào đó, bạn có thể
+          đăng nhập vào tài khoản của mình trên các trang web cá cược trực tuyến
+          và bắt đầu chơi ngay. Bạn cũng không cần phải tìm kiếm một người chơi
+          khác để chơi cùng. Xóc đĩa online cung cấp một giao diện dễ sử dụng và
+          một hệ thống chơi đơn giản để bạn có thể dễ dàng đặt cược và chơi.
+        </p>
+
+        <div class="flex items-center space-x-6">
+          <p class="h-8 border border-gray-300"></p>
+          <p class="text-lg">
+            Xem Thêm:
+            <span
+              class="text-red-600 hover:text-gray-900 transition-all duration-200 cursor-pointer"
+              >Bắn Cá Đổi Thưởng – Những cách chơi hiệu quả</span
+            >
+          </p>
+        </div>
+
+        <h1 class="font-bold text-[18px] md:text-[19px] lg:text-[20px]">
+          Cơ hội chiến thắng cao
+        </h1>
+
+        <p>
+          Xóc đĩa online có một tỷ lệ chiến thắng khá cao đối với người chơi.
+          Điều này có nghĩa là bạn có cơ hội để giành chiến thắng và thu về tiền
+          thưởng lớn. Trong xoc dia, người chơi phải đoán xem xóc đĩa sẽ rơi vào
+          ô nào trên bàn cược. Nếu đoán đúng, người chơi sẽ nhận được tiền
+          thưởng theo tỷ lệ được đặt cược trước đó. Với cách chơi đơn giản và
+          khả năng chiến thắng cao,
+          <span class="font-bold">xóc đĩa</span> online là trò chơi hấp dẫn cho
+          những người chơi mới bắt đầu.
+        </p>
+
+        <h1 class="font-bold text-[18px] md:text-[19px] lg:text-[20px]">
+          Phiên bản cách chơi khác nhau
+        </h1>
+
+        <p>
+          Xóc đĩa online cung cấp cho người chơi nhiều phiên bản và cách chơi
+          khác nhau để bạn có thể lựa chọn. Bạn có thể chơi phiên bản cổ điển
+          của trò chơi với các quy tắc đơn giản và truyền thống, hoặc bạn có thể
+          thử các phiên bản mới với các tính năng đặc biệt như xoc dia đổi
+          thưởng, xoc dia có jackpot hoặc <span class="">xóc đĩa</span> trực
+          tuyến với người chia bài trực tiếp. Những phiên bản và cách chơi khác
+          nhau này cung cấp cho người chơi nhiều sự lựa chọn và trải nghiệm khác
+          nhau, giúp tăng thêm tính thú vị và hấp dẫn của trò chơi.
+        </p>
+
+        <h1 class="font-bold text-[18px] md:text-[19px] lg:text-[20px]">
+          Tính minh bạch và an toàn
+        </h1>
+
+        <p>
+          Với xóc đĩa online, người chơi có thể yên tâm về tính minh bạch và an
+          toàn của trò chơi. Các trang web cá cược trực tuyến luôn đảm bảo rằng
+          trò chơi được thực hiện theo quy định và kiểm soát chặt chẽ để đảm bảo
+          tính minh bạch và công bằng. Bên cạnh đó, các trang web này cũng sử
+          dụng công nghệ bảo mật cao để bảo vệ thông tin và tiền tệ của người
+          chơi, đảm bảo rằng việc chơi xóc đĩa online là an toàn và bảo mật.
+        </p>
+
+        <div class="flex items-center space-x-6">
+          <p class="h-8 border border-gray-300"></p>
+          <p class="text-lg">
+            Xem Thêm:
+            <span
+              class="text-red-600 hover:text-gray-900 transition-all duration-200 cursor-pointer"
+              >Nổ Hũ – Phương pháp quay nổ hũ hiệu quả</span
+            >
+          </p>
+        </div>
+
+        <!-- img 3 -->
+        <div class="space-y-3">
+          <h1
+            class="font-bold text-[19px] md:text-[24px] lg:text-[25px] text-center"
+          >
+            Bí quyết dành chiến thắng trong xóc đĩa
+          </h1>
+
+          <div class=" ">
+            <div class="flex justify-center items-center">
+              <img
+                src="./img/xoc-dia3.jpg"
+                class="w-full lg:w-[79%] xl:w-9/12"
+              />
+            </div>
+            <p
+              class="mx-auto w-full lg:w-[79%] xl:w-9/12 py-1 bg-gray-100 text-center"
+            >
+              Bí quyết chơi xóc đĩa online luôn thắng
+            </p>
+          </div>
+        </div>
+
+        <p>
+          Bí quyết số 1: Tìm hiểu cách chơi Để chơi xóc đĩa online và chiến
+          thắng, bạn cần phải tìm hiểu cách chơi và các luật cơ bản của trò
+          chơi. Nếu bạn là một người mới bắt đầu, hãy tìm kiếm các trang web
+          hướng dẫn và xem các video hướng dẫn để hiểu rõ hơn về cách chơi
+          <span class="font-bold">xoc dia online</span>.
+        </p>
+
+        <p>
+          Bí quyết số 2: Lựa chọn đúng nhà cái Việc chọn đúng nhà cái để chơi
+          xoc dia online là rất quan trọng. Bạn nên chọn nhà cái uy tín, có giấy
+          phép hoạt động và có thâm niên trong lĩnh vực cá cược trực tuyến. Điều
+          này sẽ giúp bạn tránh được các rủi ro và có thể yên tâm chơi xoc dia
+          online mà không lo bị lừa đảo.
+        </p>
+
+        <p>
+          Bí quyết số 3: Sử dụng chiến lược đặt cược Để thắng trong xóc đĩa
+          online, bạn cần sử dụng chiến lược đặt cược phù hợp. Có nhiều cách đặt
+          cược khác nhau để bạn có thể áp dụng. Một số chiến lược được khuyến
+          khích là đặt cược vào các ô có tỉ lệ chiến thắng cao hoặc tập trung
+          vào một số ô nhất định để tăng khả năng chiến thắng.
+        </p>
+
+        <p>
+          Bí quyết số 4: Quản lý tài chính Quản lý tài chính là một trong những
+          yếu tố quan trọng để giúp bạn chơi
+          <span class="font-bold">xoc dia</span> online và luôn thắng. Bạn cần
+          xác định số tiền bạn sẽ sử dụng để đặt cược và không vượt quá giới hạn
+          đã đặt ra. Nếu bạn đang thua, hãy dừng lại và không tiếp tục đặt cược
+          để tránh mất tiền không cần thiết.
+        </p>
+
+        <div class="flex items-center space-x-6">
+          <p class="h-8 border border-gray-300"></p>
+          <p class="text-lg">
+            Xem Thêm:
+            <span
+              class="text-red-600 hover:text-gray-900 transition-all duration-200 cursor-pointer"
+              >Live Casino – Những Điểm Nổi Bật Của live casino</span
+            >
+          </p>
+        </div>
+
+        <h1
+          class="font-bold text-[19px] md:text-[24px] lg:text-[25px] text-center"
+        >
+          Kết Luận
+        </h1>
+
+        <p>
+          Trên đây là một số bi quyết của Yo88 giúp bạn chơi
+          <span class="font-bold"> xóc đĩa online </span> và luôn thắng. Tuy
+          nhiên , việc thắng trong xóc đĩa online còn phụ thuộc vào sự may mắn
+          của mỗi người , không phải lúc nào cũng dành được chiến thắng .Do đó,
+          bạn cần chơi thông minh và đừng quá lạm dụng trò chơi này để tránh mất
+          tiền không đáng có.
+        </p>
+      </div>
+
+      <!-- footer -->
+      <div class="border-t w-full border-gray-200 mt-8">
+        <div
+          class="xl:max-w-[1065px] w-full mx-auto grid md:grid-cols-3 grid-cols-1 gap-8 px-4 xl:px-0 py-8"
+        >
+          <div class="space-y-4">
+            <h1 class="font-semibold">VỀ CHÚNG TÔI</h1>
+            <p class="w-10 border-2"></p>
+            <div class="">
+              <img src="./img/footer.png" />
+            </div>
+            <p>
+              <span class="font-bold"> Yo88</span> Đây là một cổng game đang
+              được săn đón và thu hút được rất nhiều người tham gia. Nếu bạn
+              đang chưa tìm được cho mình một địa chỉ cá cược và giải trí uy tín
+              thì còn chần chờ gì nữa mà không tham gia ngay nhỉ!
+            </p>
+          </div>
+          <div class="space-y-4">
+            <h1 class="font-semibold">DANH MỤC</h1>
+            <p class="w-10 border-2"></p>
+            <ul class="space-y-3">
+              <li>Giới Thiệu</li>
+              <li>Chính Sách</li>
+              <li>Điểu Khoản</li>
+              <li>Tin Tức</li>
+            </ul>
+            <div>
+              <img src="./img/footer2.png" />
+            </div>
+          </div>
+          <div class="space-y-4">
+            <h1 class="font-semibold">LIÊN HỆ</h1>
+            <p class="w-10 border-2"></p>
+
+            <ul class="space-y-3">
+              <li>Doanh nghiệp: Yo88</li>
+              <li>
+                Website:
+                <span class="font-bold text-red-500">https://yo88vn.info/</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center py-3 bg-[#2B1100] text-gray-400 text-sm">
+          Copyright 2024 © YO88VN.INFO
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

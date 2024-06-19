@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./img/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chính sách bảo mật</title>
+    <meta name="description" content="Yo88vn là một trang web cá cược trực tuyến phổ biến tại Việt Nam. Với các trò chơi đa dạng và chính sách bảo mật đáng tin cậy, Yo88 đã trở thành lựa chọn hàng">
+    <meta name="keywords" content="Chính sách, Bắn Cá, Đá Gà, Xóc Đĩa, Sòng Bài, Sicbo,  Bầu Cua, Nổ Hũ, Xổ Số, Baccarat">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <!-- navbar -->
+      <div
+        class="widht inset-0 bg-opacity-60 bg-gray-950 h-screen fixed z-10 lg:hidden"
+      >
+        <div
+          onclick="handleHide()"
+          class="lg:hidden absolute right-3 top-3 md:top-5 md:right-5 text-gray-100"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+        <div class="w-[70%] md:w-[34%] h-full bg-gray-100 py-14">
+          <div class="flex items-center justify-center">
+            <input
+              type="text"
+              class="text-gray-500 text-xl shadow-lg h-10 w-[72%] border-l border-t border-b rounded-l pl-2 focus:outline-none"
+            />
+            <div
+              class="h-[2.6rem] border-r border-t border-b w-10 flex justify-center items-center shadow-lg rounded-r bg-[#D26E4B] text-white text-2xl"
+            >
+              <a href="https://www.hay88.one/?inviteCode=1605706">
+                <ion-icon name="search-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <ul class="pt-8 font-semibold text-gray-600">
+            <li class="pt-4 border-t border-gray-300 pb-2 pl-5">
+              <a href="./index.html">Trang Chủ</a>
+            </li>
+            <li class="pt-4 border-t border-gray-300 pb-2 pl-5">
+              <a href="./gioi-thieu.html">GIỚI THIỆU</a>
+            </li>
+            <li class="pt-4 border-t border-gray-300 pb-2 pl-5">
+              <a href="./chinh-sach-bao-mat.html">CHÍNH SÁCH</a>
+            </li>
+            <li class="pt-4 border-t border-gray-300 pb-2 pl-5">
+              <a href="./dieu-khoan-dich-vu.html">ĐIỀU KHOẢN</a>
+            </li>
+            <li class="pt-4 border-t border-gray-300 uppercase pb-2 pl-5">
+              <a href="./xoc-dia.html">xoc-dia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- header -->
+      <div class="bg-[#2B1100] w-full fixed">
+        <div
+          class="xl:max-w-[1065px] w-full mx-auto hidden lg:flex items-center justify-between px-4 xl:px-0"
+        >
+          <div><img src="./img/yo88vn.net_.png" class="w-[135px]" /></div>
+          <div>
+            <ul
+              class="flex items-center justify-center space-x-4 font-semibold uppercase"
+            >
+              <li class="text-gray-100">
+                <a href="./index.html"
+                  >Trang Chủ</a
+                >
+              </li>
+              <li class="text-gray-100">
+                <a href="./gioi-thieu.html"
+                  >GIỚI THIỆU</a
+                >
+              </li>
+              <li class="text-white">
+                <a href="./chinh-sach-bao-mat.html"
+                  >CHÍNH SÁCH</a
+                >
+              </li>
+              <li class="text-gray-100">
+                <a href="./dieu-khoan-dich-vu.html"
+                  >ĐIỀU KHOẢN</a
+                >
+              </li>
+              <li class="text-gray-100 uppercase">
+                <a href="./xoc-dia.html">xoc-dia</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center items-center space-x-4 text-white">
+            <a href="https://www.hay88.one/?inviteCode=1605706">
+              <button
+                class="bg-[#B20000] rounded font-semibold text-sm uppercase px-3 py-1"
+              >
+                Đăng Ký
+              </button>
+            </a>
+
+            <a href="https://www.hay88.one/?inviteCode=1605706">
+              <button
+                class="bg-[#7A9C59] rounded font-semibold text-sm uppercase px-3 py-1"
+              >
+                Đăng nhập
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:hidden flex justify-between items-center px-3">
+          <div onclick="handleShow()" class="text-white text-3xl pt-2">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+
+          <div class="pr-8">
+            <img src="./img/yo88vn.net_.png" class="w-[135px]" />
+          </div>
+
+          <div></div>
+        </div>
+        <div
+          class="flex lg:hidden justify-center items-center space-x-4 text-white bg-white inset-0 bg-opacity-95 py-1"
+        >
+          <a href="https://www.hay88.one/?inviteCode=1605706">
+            <button
+              class="bg-[#B20000] rounded font-semibold text-sm uppercase px-3 py-1"
+            >
+              Đăng Ký
+            </button>
+          </a>
+
+          <a href="https://www.hay88.one/?inviteCode=1605706">
+            <button
+              class="bg-[#7A9C59] rounded font-semibold text-sm uppercase px-3 py-1"
+            >
+              Nhận Code
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- container -->
+      <div
+        class="xl:max-w-[1065px] w-full mx-auto px-4 xl:px-0 space-y-4 py-7 pt-36 lg:pt-[116px]"
+      >
+        <h1
+          class="font-bold text-[21px] text-center md:text-[26px] lg:text-[27px]"
+        >
+          Chính sách bảo mật
+        </h1>
+
+        <p>
+          <span class="font-bold">Yo88</span> là một trang web cá cược trực
+          tuyến phổ biến tại Việt Nam. Với các trò chơi đa dạng và
+          <span
+            class="text-red-500 font-bold transition-all duration-200 hover:text-gray-800 cursor-pointer"
+            >chính sách bảo mật</span
+          >
+          đáng tin cậy, <span class="font-bold">Yo88</span> đã trở thành lựa
+          chọn hàng đầu của nhiều người chơi . Trong bài viết này , chúng ta sẽ
+          tìm hiểu về chính sách bảo mật của Yo88, đảm bảo rằng bạn có thể tận
+          hưởng trò chơi một cách an toàn và đáng tin cậy.
+        </p>
+
+        <h1 class="font-bold text-[19px] md:text-[24px] lg:text-[25px]">
+          Tổng quản về chính sách bảo mật
+        </h1>
+
+        <p>
+          Yo88 cam kết bảo vệ thông tin cá nhân của người chơi và đảm bảo rằng
+          các thông tin này được bảo mật tuyệt đối. Chính sách bảo mật của Yo88
+          bao gồm các điều khoản sau: Sử dụng thông tin cá nhân: Yo88 chỉ sử
+          dụng thông tin cá nhân của người chơi cho mục đích xác nhận và hỗ trợ
+          khách hàng. Chúng tôi cam kết không bán, cho thuê hoặc chia sẻ thông
+          tin của người chơi với bất kỳ bên thứ ba nào.
+        </p>
+
+        <p>
+          Bảo mật thông tin: Yo88 sử dụng các biện pháp bảo mật công nghệ hiện
+          đại để đảm bảo an toàn cho thông tin cá nhân của người chơi. Chúng tôi
+          đảm bảo rằng các thông tin cá nhân của người chơi không bị đánh cắp,
+          mất mát hoặc tiết lộ cho bất kỳ ai khác. Bảo mật giao dịch: Yo88 sử
+          dụng các công nghệ bảo mật cao cấp để đảm bảo tính toàn vẹn của giao
+          dịch. Chúng tôi đảm bảo rằng mọi thông tin liên quan đến giao dịch sẽ
+          được mã hóa và lưu trữ an toàn tại các máy chủ của chúng tôi.
+        </p>
+
+        <!-- img 1 -->
+        <div class="space-y-3">
+          <h1
+            class="font-bold text-19 md:text-[24px] lg text-[19px] md:text-[24px]:lg:text-[25px]"
+          >
+            Thông tin cá nhân mà Yo88 thu thập
+          </h1>
+          <div class="flex justify-center items-center">
+            <img src="./img/chinh-sach-bao-mat1.jpg" />
+          </div>
+          <p>
+            Khi đăng ký tài khoản trên Yo88, người chơi sẽ cung cấp một số thông
+            tin cá nhân. Yo88 cũng có thể yêu cầu người chơi cung cấp thêm thông
+            tin cá nhân, chẳng hạn như họ tên, ngày sinh và địa chỉ.
+          </p>
+        </div>
+
+        <p>
+          Ngoài ra , Yo88 thu thập một số thông tin không nhân dạng được về
+          người dung, bao gồm địa chỉ IP, thông tin trình duyệt và hệ điều hành
+          .Những thông tin này đươc sử dụng để cải thiện trải nghiệm của người
+          chơi trên trang web của chúng tôi.
+        </p>
+
+        <p>
+          Chính sách bảo mật của Yo88 cũng đảm bảo rằng thông tin của người chơi
+          sẽ không được tiết lộ cho bất kỳ bên thứ ba nào , trừ khi được yêu cầu
+          bởi luật pháp hoặc khi có như cầu bảo vệ quyền lợi, tài sản hoặc an
+          toàn của Yo88 hoăc của người chơi.
+        </p>
+
+        <p>
+          Ngoài ra, Yo88 cũng cam kết sử dụng cookie và các công nghệ tương tự
+          để thu thập thông tin về hoạt động của người dùng. Những thông tin này
+          được sử dụng để tối ưu hóa trải nghiệm của người chơi và cung cấp các
+          dịch vụ tốt hơn.
+        </p>
+
+        <p>
+          Điều khoản chính sách bảo mật của Yo88 Để đảm bảo tính an toàn và bảo
+          mật cho thông tin cá nhân của người chơi, Yo88 đã thiết lập các điều
+          khoản trong chính sách bảo mật của mình. Các điều khoản này bao gồm:
+        </p>
+
+        <ul class="list-disc space-y-3 pl-5 lg:pl-4">
+          <li>
+            Yo88 sẽ chỉ thu thập và sử dụng thông tin cá nhân của người chơi khi
+            có sự đồng ý của họ.
+          </li>
+          <li>
+            Yo88 sẽ không bán hoặc cho thuê thông tin cá nhân của người chơi cho
+            bất kỳ bên thứ ba nào.
+          </li>
+          <li>
+            Yo88 sẽ không tiết lộ thông tin cá nhân của người chơi cho bất kỳ
+            bên thứ ba nào, trừ khi được yêu cầu bởi pháp luật hoặc khi có nhu
+            cầu bảo vệ quyền lợi, tài sản hoặc an toàn của Yo88 hoặc của người
+            chơi.
+          </li>
+          <li>
+            Yo88 sẽ sử dụng các biện pháp bảo mật công nghệ hiện đại để bảo vệ
+            thông tin cá nhân của người chơi.
+          </li>
+          <li>
+            Người chơi có quyền yêu cầu xem, chỉnh sửa hoặc xoá thông tin cá
+            nhân của mình trên Yo88.
+          </li>
+          <li>
+            Người chơi có quyền phản đối việc sử dụng thông tin cá nhân của mình
+            cho mục đích quảng cáo hoặc tiếp thị.
+          </li>
+        </ul>
+
+        <h1 class="font-bold text-[21px] md:text-[26px]">Kết luận</h1>
+
+        <p>
+          <span class="font-bold">Chính sách bảo mật </span> của
+          <span
+            class="text-red-500 font-bold transition-all duration-200 hover:text-gray-800 cursor-pointer"
+            >Yo88</span
+          >
+          đảm bảo tính an toàn và đáng tin cậy cho thông tin cá nhân của người
+          chơi. Yo88 cam kết bảo vệ thông tin cá nhân của người chơi sẽ được bảo
+          mật tuyệt đối.
+        </p>
+      </div>
+
+      <!-- footer -->
+      <div class="border-t w-full border-gray-200 mt-8">
+        <div
+          class="xl:max-w-[1065px] w-full mx-auto grid md:grid-cols-3 grid-cols-1 gap-8 px-4 xl:px-0 py-8"
+        >
+          <div class="space-y-4">
+            <h1 class="font-semibold">VỀ CHÚNG TÔI</h1>
+            <p class="w-10 border-2"></p>
+            <div class="">
+              <img src="./img/footer.png" />
+            </div>
+            <p>
+              <span class="font-bold"> Yo88</span> Đây là một cổng game đang
+              được săn đón và thu hút được rất nhiều người tham gia. Nếu bạn
+              đang chưa tìm được cho mình một địa chỉ cá cược và giải trí uy tín
+              thì còn chần chờ gì nữa mà không tham gia ngay nhỉ!
+            </p>
+          </div>
+          <div class="space-y-4">
+            <h1 class="font-semibold">DANH MỤC</h1>
+            <p class="w-10 border-2"></p>
+            <ul class="space-y-3">
+              <li>Giới Thiệu</li>
+              <li>Chính Sách</li>
+              <li>Điểu Khoản</li>
+              <li>Tin Tức</li>
+            </ul>
+            <div>
+              <img src="./img/footer2.png" />
+            </div>
+          </div>
+          <div class="space-y-4">
+            <h1 class="font-semibold">LIÊN HỆ</h1>
+            <p class="w-10 border-2"></p>
+
+            <ul class="space-y-3">
+              <li>Doanh nghiệp: Yo88</li>
+              <li>
+                Website:
+                <span class="font-bold text-red-500">https://yo88vn.info/</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center py-3 bg-[#2B1100] text-gray-400 text-sm">
+          Copyright 2024 © YO88VN.INFO
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

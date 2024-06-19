@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/icon.png">
+    <title>Yo88vn-info - Sân chơi giải trí đa dạng , an toàn và uy tín</title>
+    <meta name="description" content="Yo88vn là một trong những sân chơi giải trí&nbsp; trực tuyến hàng đầu tại việt nam, cung cấp cho người chơi nhiều lựa chọn đa dạng và hấp dẫn. Ngoài ra Yo88 còn được đánh gái là một trong những trang web đáng tin cậy và an toàn nhất cho người chơi.">
+    <meta name="keywords" content="Yo88vn, Đá Gà, Xóc Đĩa, Bầu Cua, Nổ Hũ, Bắn Cá, Sòng Bài, Sicbo, Xổ Số, Baccarat">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+     <!-- navbar -->
+     <div
+     class="widht inset-0 bg-opacity-60 bg-gray-950 h-screen fixed z-10 lg:hidden"
+   >
+     <div
+       onclick="handleHide()"
+       class="lg:hidden absolute right-3 top-3 md:top-5 md:right-5 text-gray-100"
+     >
+       <svg
+         xmlns="http://www.w3.org/2000/svg"
+         fill="none"
+         viewBox="0 0 24 24"
+         stroke-width="1.5"
+         stroke="currentColor"
+         class="size-6"
+       >
+         <path
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           d="M6 18 18 6M6 6l12 12"
+         />
+       </svg>
+     </div>
+     <div class="w-[70%] md:w-[34%] h-full bg-gray-100 py-14">
+       <div class="flex items-center justify-center">
+         <input
+           type="text"
+           class="text-gray-500 text-xl shadow-lg h-10 w-[72%] border-l border-t border-b rounded-l pl-2 focus:outline-none"
+         />
+         <div
+           class="h-[2.6rem] border-r border-t border-b w-10 flex justify-center items-center shadow-lg rounded-r bg-[#D26E4B] text-white text-2xl"
+         >
+           <a href="https://www.hay88.one/?inviteCode=1605706">
+             <ion-icon name="search-outline"></ion-icon>
+           </a>
+         </div>
+       </div>
+
+       <ul class="pt-8 font-semibold text-gray-600">
+         <li class="pt-4 border-t border-gray-300 pb-2 pl-5">
+           <a href="./index.html">Trang Chủ</a>
+         </li>
+         <li class="pt-4 border-t border-gray-300 pb-2 pl-5">
+           <a href="./gioi-thieu.html">GIỚI THIỆU</a>
+         </li>
+         <li class="pt-4 border-t border-gray-300 pb-2 pl-5">
+           <a href="./chinh-sach-bao-mat.html">CHÍNH SÁCH</a>
+         </li>
+         <li class="pt-4 border-t border-gray-300 pb-2 pl-5">
+           <a href="./dieu-khoan-dich-vu.html">ĐIỀU KHOẢN</a>
+         </li>
+         <li class="pt-4 border-t border-gray-300 uppercase pb-2 pl-5">
+           <a href="./xoc-dia.html">xoc-dia</a>
+         </li>
+       </ul>
+     </div>
+   </div>
+   <!-- header -->
+   <div class="bg-[#2B1100] w-full fixed">
+     <div
+       class="xl:max-w-[1065px] w-full mx-auto hidden lg:flex items-center justify-between px-4 xl:px-0"
+     >
+       <div><img src="./img/yo88vn.net_.png" class="w-[135px]" /></div>
+       <div>
+         <ul
+           class="flex items-center justify-center space-x-4 font-semibold uppercase"
+         >
+           <li class="text-gray-100">
+             <a href="./index.html"
+               >Trang Chủ</a
+             >
+           </li>
+           <li class="text-white">
+             <a href="./gioi-thieu.html"
+               >GIỚI THIỆU</a
+             >
+           </li>
+           <li class="text-gray-100">
+             <a href="./chinh-sach-bao-mat.html"
+               >CHÍNH SÁCH</a
+             >
+           </li>
+           <li class="text-gray-100">
+             <a href="./dieu-khoan-dich-vu.html"
+               >ĐIỀU KHOẢN</a
+             >
+           </li>
+           <li class="text-gray-100 uppercase">
+             <a href="./xoc-dia.html">xoc-dia</a>
+           </li>
+         </ul>
+       </div>
+       <div class="flex justify-center items-center space-x-4 text-white">
+         <a href="https://www.hay88.one/?inviteCode=1605706">
+           <button
+             class="bg-[#B20000] rounded font-semibold text-sm uppercase px-3 py-1"
+           >
+             Đăng Ký
+           </button>
+         </a>
+
+         <a href="https://www.hay88.one/?inviteCode=1605706">
+           <button
+             class="bg-[#7A9C59] rounded font-semibold text-sm uppercase px-3 py-1"
+           >
+             Đăng nhập
+           </button>
+         </a>
+       </div>
+     </div>
+
+     <div class="lg:hidden flex justify-between items-center px-3">
+       <div onclick="handleShow()" class="text-white text-3xl pt-2">
+         <ion-icon name="menu-outline"></ion-icon>
+       </div>
+
+       <div class="pr-8">
+         <img src="./img/yo88vn.net_.png" class="w-[135px]" />
+       </div>
+
+       <div></div>
+     </div>
+     <div
+       class="flex lg:hidden justify-center items-center space-x-4 text-white bg-white inset-0 bg-opacity-95 py-1"
+     >
+       <a href="https://www.hay88.one/?inviteCode=1605706">
+         <button
+           class="bg-[#B20000] rounded font-semibold text-sm uppercase px-3 py-1"
+         >
+           Đăng Ký
+         </button>
+       </a>
+
+       <a href="https://www.hay88.one/?inviteCode=1605706">
+         <button
+           class="bg-[#7A9C59] rounded font-semibold text-sm uppercase px-3 py-1"
+         >
+           Nhận Code
+         </button>
+       </a>
+     </div>
+   </div>
+      
+      <!-- container -->
+      <div
+        class="xl:max-w-[1065px] w-full mx-auto px-4 xl:px-0 space-y-4 py-7 pt-36 lg:pt-[116px]"
+      >
+        <h1
+          class="font-bold text-[21px] text-center md:text-[26px] lg:text-[27px]"
+        >
+          Yo88 – Sân chơi giải trí đa dạng , an toàn và uy tín
+        </h1>
+        <p>
+          <span
+            class="text-red-500 font-bold transition-all duration-200 hover:text-gray-800 cursor-pointer"
+            >Yo88</span
+          >
+          Yo88 là một trong những sân chơi giải trí trực tuyến hàng đầu tại việt
+          nam, cung cấp cho người chơi nhiều lựa chọn đa dạng và hấp dẫn. Ngoài
+          ra <span class="font-bold text-gray-800">Yo88</span> còn được đánh gái
+          là một trong những trang web đáng tin cậy và an toàn nhất cho người
+          chơi.
+        </p>
+
+        <!-- img 1 -->
+        <div class="space-y-3">
+          <h1 class="font-bold text-[19px] md:text-[24px] lg:text-[25px]">
+            Thông tin chung về Yo88
+          </h1>
+
+          <div class="">
+            <div class="flex justify-center items-center">
+              <img src="./img/gioi-thieu1.jpg" class="w-full lg:w-[79%] xl:w-9/12" />
+            </div>
+            <p
+              class="mx-auto w-full lg:w-[79%] xl:w-9/12 text-center bg-gray-100 py-1"
+            >
+              Thông tin chung về Yo88
+            </p>
+          </div>
+        </div>
+
+        <p class="">
+          Là một thương hiệu của công ty TNHH Yo
+          <span
+            class="text-red-500 transition-all duration-200 hover:text-gray-800"
+            >Entertainment</span
+          >
+          , được thành lập vào năm 2017. Tại 88 yo người chơi có thể tìm thấy
+          rất nhiều trò chơi đa dạng , từ các trò chơi slot, bài đổi thưởng ,
+          đến các trò chơi trực tuyến như bóng, thể thao , casino trực tuyến ,v
+          .v
+        </p>
+
+        <h1 class="font-bold text-[19px] md:text-[24px] lg:text-[25px]">
+          Chất lượng và đa dạng của trò chơi
+        </h1>
+
+        <p>
+          Yo88 là một nhà cái trực tuyến có danh tiếng và chất lượng, đem đến
+          cho người chơi một loạt các trò chơi đa dạng và hấp dẫn. Các trò chơi
+          được cung cấp bởi những nhà phát triển game hàng đầu trong ngành, bao
+          gồm Microgaming, Playtech, NetEnt và Evolution Gaming.
+        </p>
+
+        <p>
+          Các trò chơi slot của Yo88 có chất lượng cao và đa dạng, với hàng trăm
+          định dạng khác nhau và chủ đề thú vị. Một số trò chơi slot phổ biến
+          của Yo88 bao gồm Book of Ra, Thunderstruck II, Immortal Romance và
+          Mega Moolah, một trong những trò chơi có giải thưởng jackpot lớn nhất
+          trên thế giới.
+        </p>
+
+        <p>
+          Ngoài các trò chơi slot, Yo88 cũng cung cấp các trò chơi bài đổi
+          thưởng như baccarat, blackjack và poker. Các trò chơi này được thiết
+          kế để cung cấp trải nghiệm chơi game tốt nhất cho người chơi, với các
+          phiên bản chơi đơn giản và dễ hiểu cho người mới bắt đầu và các phiên
+          bản chơi phức tạp hơn cho những người chơi có kinh nghiệm.
+        </p>
+
+        <p>
+          Yo88 cũng cung cấp các trò chơi trực tuyến như bóng đá, thể thao và
+          casino trực tuyến. Các trò chơi này cho phép người chơi cược trực tiếp
+          và theo thời gian thực trên các trận đấu đang diễn ra, cung cấp trải
+          nghiệm chơi game đầy kịch tính và hấp dẫn.
+        </p>
+
+        <h1 class="font-bold text-[19px] md:text-[24px] lg:text-[25px]">
+          An toàn và đáng tin cậy
+        </h1>
+
+        <p>
+          Yo 88 là một trong những trang web an toàn và đáng tin cậy nhất cho
+          người mới chơi. Để đảm bảo tính an toàn cho người , Yo8 sử dụng các
+          công nghệ bảo mật tiên tiến và có nhân vien hỗ trợ khách hàng 24/7 .
+          Ngoài ra , Yo88 còn có chính sách bảo mật tuyệt đối , cam kết không
+          chia sẻ thông tin của người chơi cho bất kỳ bên thứ ba nào.
+        </p>
+
+        <!-- img 2 -->
+        <div class="space-y-3">
+          <h1 class="font-bold text-[19px] md:text-[24px] lg:text-[25px]">
+            Quà tặng hấp dẫn
+          </h1>
+
+          <div class="">
+            <div class="flex justify-center items-center">
+              <img src="./img/gioi-thieu2.jpg" class="w-full lg:w-[79%] xl:w-9/12" />
+            </div>
+            <p
+              class="mx-auto w-full lg:w-[79%] xl:w-9/12 text-center bg-gray-100 py-1"
+            >
+              Quà tặng hấp dẫn
+            </p>
+          </div>
+        </div>
+
+        <p>
+          Yo88 cung cấp cho người chơi nhiều chương trình khuyến mãi và thưởng
+          hấp dẫn. Người chơi có thể nhận được các khoản thưởng tiền mặt, miễn
+          phí quay, và các phần quà giá trị khác. Ngoài ra, Yo88 còn có chương
+          trình VIP Club dành cho những người chơi thường xuyên và đạt mức đặc
+          biệt, cung cấp cho họ các phần thưởng đặc biệt và ưu đãi riêng.
+        </p>
+
+        <!-- img 3 -->
+        <div class="space-y-3">
+          <h1 class="font-bold text-[19px] md:text-[24px] lg:text-[25px]">
+            Hỗ trợ khách hàng
+          </h1>
+
+          <div class="">
+            <div class="flex justify-center items-center">
+              <img src="./img/gioi-thieu3.jpg" class="w-full lg:w-[79%] xl:w-9/12" />
+            </div>
+            <p
+              class="mx-auto w-full lg:w-[79%] xl:w-9/12 text-center bg-gray-100 py-1"
+            >
+              Hỗ trợ khách hàng
+            </p>
+          </div>
+        </div>
+
+        <p>
+          Yo88 có đội ngũ nhân viên hỗ trợ khách hàng chuyên nghiệp và nhiệt
+          tình, sẵn sàng giải đáp mọi thắc mắc và hỗ trợ người chơi trong quá
+          trình sử dụng dịch vụ trên trang web. Để liên hệ với đội ngũ hỗ trợ
+          khách hàng của Yo88, người chơi có thể sử dụng các kênh liên lạc sau:
+        </p>
+
+        <ul class="list-disc space-y-3 pl-5 lg:pl-4">
+          <li>Chat trực tuyến trên trang web của Yo88.</li>
+          <li>Gửi email cho đội ngũ hỗ trợ khách hàng của Yo88.</li>
+          <li>
+            Gọi điện thoại vào số hotline của Yo88 để được hỗ trợ trực tiếp.
+          </li>
+          <li>
+            Liên hệ qua các mạng xã hội của Yo88 để được giải đáp thắc mắc.
+          </li>
+        </ul>
+
+        <p>
+          Đội ngũ hỗ trợ khách hàng của Yo88 hoạt động 24/7 để đảm bảo giải đáp
+          mọi yêu cầu và thắc mắc của người chơi. Họ sẽ giải đáp những câu hỏi
+          về việc đăng ký tài khoản, nạp tiền, rút tiền, cách chơi game, cách
+          tham gia các chương trình khuyến mãi, và các vấn đề khác liên quan đến
+          trang web Yo88.
+        </p>
+
+        <p>
+          Ngoài ra, Yo88 còn có một trang web hỗ trợ khách hàng đầy đủ các thông
+          tin hữu ích về các câu hỏi thường gặp, chính sách bảo mật, và hướng
+          dẫn sử dụng trang web. Người chơi có thể truy cập vào trang web này để
+          tìm kiếm các thông tin hữu ích hoặc giải quyết các vấn đề mà không cần
+          phải liên hệ trực tiếp với đội ngũ hỗ trợ khách hàng.
+        </p>
+
+        <h1 class="font-bold text-[19px] md:text-[24px] lg:text-[25px]">
+          Ứng dụng di động
+        </h1>
+
+        <p>
+          Yo88 cung cấp ứng dụng di động cho cả hệ điều hành Android và iOS,
+          giúp người chơi có thể truy cập và chơi game mọi lúc, mọi nơi chỉ với
+          một chiếc điện thoại di động. Ứng dụng được thiết kế tối ưu hóa cho
+          trải nghiệm chơi game trên điện thoại, đảm bảo tốc độ và độ ổn định
+          của trò chơi.
+        </p>
+
+        <h1 class="font-bold text-[19px] md:text-[24px] lg:text-[25px]">
+          Kết luận
+        </h1>
+
+        <p>
+          <span
+            class="text-red-500 hover:text-gray-800 transition-all duration-300"
+            >Yo88</span
+          >
+          là một trong những sân chơi giải trí trực tuyến hàng đầu tại Việt Nam.
+          Với đa dạng các trò chơi đẳng cấp, tính an toàn và đáng tin cậy,
+          chương trình khuyến mãi hấp dẫn và đội ngũ hỗ trợ khách hàng chuyên
+          nghiệp, Yo88 xứng đáng là một sân chơi giải trí tuyệt vời cho những
+          người chơi yêu thích các trò chơi trực tuyến. Hãy truy cập trang web
+          của Yo88 hoặc tải ứng dụng di động để khám phá thế giới giải trí đa
+          dạng, an toàn và uy tín của Yo88 ngay hôm nay!
+        </p>
+      </div>
+
+     <!-- footer -->
+     <div class="border-t w-full border-gray-200 mt-8">
+      <div
+        class="xl:max-w-[1065px] w-full mx-auto grid md:grid-cols-3 grid-cols-1 gap-8 px-4 xl:px-0 py-8"
+      >
+        <div class="space-y-4">
+          <h1 class="font-semibold">VỀ CHÚNG TÔI</h1>
+          <p class="w-10 border-2"></p>
+          <div class="">
+            <img src="./img/footer.png" />
+          </div>
+          <p>
+            <span class="font-bold"> Yo88</span> Đây là một cổng game đang
+            được săn đón và thu hút được rất nhiều người tham gia. Nếu bạn
+            đang chưa tìm được cho mình một địa chỉ cá cược và giải trí uy tín
+            thì còn chần chờ gì nữa mà không tham gia ngay nhỉ!
+          </p>
+        </div>
+        <div class="space-y-4">
+          <h1 class="font-semibold">DANH MỤC</h1>
+          <p class="w-10 border-2"></p>
+          <ul class="space-y-3">
+            <li>Giới Thiệu</li>
+            <li>Chính Sách</li>
+            <li>Điểu Khoản</li>
+            <li>Tin Tức</li>
+          </ul>
+          <div>
+            <img src="./img/footer2.png" />
+          </div>
+        </div>
+        <div class="space-y-4">
+          <h1 class="font-semibold">LIÊN HỆ</h1>
+          <p class="w-10 border-2"></p>
+
+          <ul class="space-y-3">
+            <li>Doanh nghiệp: Yo88</li>
+            <li>
+              Website:
+              <span class="font-bold text-red-500">https://yo88vn.info/</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center py-3 bg-[#2B1100] text-gray-400 text-sm">
+        Copyright 2024 © YO88VN.INFO
+      </div>
+    </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
